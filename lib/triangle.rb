@@ -13,10 +13,10 @@ def kind
     raise TriangleError
 
   elsif @length1 == @length2 && @length1 == @length3
-    return :equilateral
+    :equilateral
   elsif @length1 == @length2 || @length1 == @length3 || @length2 == @length3
-    return :isosceles
-  else return :scalene
+    :isosceles
+  else :scalene
   end
 end
 
