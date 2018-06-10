@@ -22,7 +22,7 @@ end
 
 def check_triangle
   real_triangle = [(@length1 + @length2 > @length3), (@length1 + @length3 > @length2), (@length3 + @length2 > @length1)]
-  [a, b, c].each { |s| real_triangle << false if s <= 0 }
+  [@length1, @length2, @length3].each { |s| real_triangle << false if s <= 0 }
   raise TriangleError if real_triangle.include?(false)
 end
 
