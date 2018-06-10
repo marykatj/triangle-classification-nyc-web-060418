@@ -14,6 +14,7 @@ def kind
   rescue TraingleError => error
     puts error.message
   end
+  
   elsif @length1 == @length2 == @length3
     return :equilateral
   elsif @length1 == @length2 || @length1 == @length3 || @length 2 == @length3
