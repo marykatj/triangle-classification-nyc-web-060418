@@ -8,7 +8,11 @@ def initialize(length1, length2, length3)
   @length3 = length3
 end
 
-class OurError < StandardError
+def kind
+  if @length1 = 0 || @length2 = 0 || @length3 = 0 || (@length1 + @length2) > @length3 || (@length2 + @length3) > @length1 || (@length1 + @length3) > @length2
+end
+
+class TraingleError < StandardError
   def message "error message"
   end
 end
