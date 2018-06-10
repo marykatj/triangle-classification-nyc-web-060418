@@ -17,7 +17,6 @@ def kind
     return :isosceles
   else return :scalene
   end
-    
 end
 
 class TraingleError < StandardError
