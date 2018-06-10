@@ -12,7 +12,6 @@ end
 
 def kind
   check_triangle
-  binding.pry
   if @length1 == @length2 && @length1 == @length3
     :equilateral
   elsif @length1 == @length2 || @length1 == @length3 || @length2 == @length3
