@@ -21,7 +21,7 @@ def kind
   end
 end
 
-class TraingleError < StandardError
+class TriangleError < StandardError
   end
 end
 
