@@ -10,7 +10,9 @@ end
 
 def kind
   if @length1 = 0 || @length2 = 0 || @length3 = 0 || (@length1 + @length2) > @length3 || (@length2 + @length3) > @length1 || (@length1 + @length3) > @length2
-    TriangleError
+    raise TriangleError
+  rescue TraingleError => error
+    puts error.message
   elsif @length1 == @length2 == @length3
     return :equilateral
   elsif @length1 == @length2 || @length1 == @length3 || @length 2 == @length3
